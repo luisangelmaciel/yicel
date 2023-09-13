@@ -2,7 +2,7 @@
 
 ## Platforms
 Play in browser Windows 
-<a href="https://luisangelmaciel.itch.io/miraculous-ladybug>Available in itch.io</a> 
+<a href="https://luisangelmaciel.itch.io/miraculous-ladybug">Available in itch.io</a> 
 
 ## Contribute
 Want to be part of the Yicel Game project? Great! All are welcome! We will get there quicker together :) Whether you find a bug, have a great feature request, or you fancy owning a task from the road map above, feel free to get in touch.
