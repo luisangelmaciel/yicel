@@ -41,4 +41,4 @@ Nada mal... Este sitio tuvo cambios importantes en el diseño. Tomó poco tiempo
 ### Lighthouse
 <img src="" alt="Lighthouse" >
 
-<iframe frameborder="0" src="https://itch.io/embed/2260028?dark=true" width="552" height="167"><a href="https://luisangelmaciel.itch.io/miraculous-ladybug">Miraculous Ladybug - Juego de computadora Online by heyLuisAngel</a></iframe>
+<iframe frameborder="0" src="https://itch.io/embed/2260028?dark=true" width="552" height="167"></iframe><a href="https://luisangelmaciel.itch.io/miraculous-ladybug">Miraculous Ladybug - Juego de computadora Online by heyLuisAngel</a>
