@@ -39,6 +39,6 @@ Nada mal... Este sitio tuvo cambios importantes en el diseño. Tomó poco tiempo
 ¡Se ve muy bien! Este sitio no tenía solicitudes de terceros que bloquearan el procesamiento y que pudieran ser un único punto de falla. No tuvo problemas de seguridad. El contenido HTML se generó principalmente en el lado del servidor.
 
 ### Lighthouse
-<img src="" alt="Lighthouse" >
+<img src="img/lighthouse-13-09-2023.png" alt="Lighthouse" >
 
-<iframe frameborder="0" src="https://itch.io/embed/2260028?dark=true" width="552" height="167"></iframe><a href="https://luisangelmaciel.itch.io/miraculous-ladybug">Miraculous Ladybug - Juego de computadora Online by heyLuisAngel</a>
+
