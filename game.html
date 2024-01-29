@@ -1,0 +1,298 @@
+
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Miraculous Ladybug - Juego en Línea: ¡Ayuda a Miraculous a Rescatar a sus Amigos!</title>
+<meta name="description" content="Juego educativo en línea: Ayuda a Miraculous a salvar a sus amigos esquivando mariposas. Mejora la toma de decisiones de los niños.">
+<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Articulos promocionales">
+<link rel="alternate" href="/feed/feed.json" type="application/json" title="Articulos promocionales">	
+<link href="https://yarticulospromocionales.vercel.app/css/tabler.min.css" rel="stylesheet"/>
+<link href="https://yarticulospromocionales.vercel.app/bcss/tabler-flags.min.css?1684106062" rel="stylesheet"/>
+<link href="https://yarticulospromocionales.vercel.app/bcss/tabler-payments.min.css?1684106062" rel="stylesheet"/>
+<link href="https://yarticulospromocionales.vercel.app/b/css/tabler-vendors.min.css?1684106062" rel="stylesheet"/>
+<link href="https://yarticulospromocionales.vercel.app/b/css/demo.min.css?1684106062" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@latest/dist/css/tabler.min.css">
+<script src="https://cdn.jsdelivr.net/npm/@tabler/core@latest/dist/js/tabler.min.js"></script>	
+<style>
+    @font-face {
+    font-family: InterVariable;
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url('/font-files/inter/InterVariable.woff2') format('woff2');
+    }
+    @font-face {
+    font-family: InterVariable;
+    font-style: italic;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url('/font-files/inter/InterVariable-Italic.woff2) format('woff2');
+    }
+    /* legacy name "Inter var" (Oct 2023) */
+    @font-face { font-family:'Inter var'; font-style:normal; font-weight:100 900; font-display:swap; src: url('/font-files/inter/InterVariable.woff2') format('woff2'); }
+    @font-face { font-family:'Inter var'; font-style:italic; font-weight:100 900; font-display:swap; src: url('/font-files/inter/InterVariable-Italic.woff2?v=4.0') format('woff2'); }
+    /* static fonts */
+    @font-face { font-family:Inter; font-style:normal; font-weight:100; font-display:swap; src:url("/font-files/inter/Inter-Thin.woff2?v=4.0") format("woff2"); }
+    @font-face { font-family:Inter; font-style:italic; font-weight:100; font-display:swap; src:url("/font-files/inter/Inter-ThinItalic.woff2?v=4.0") format("woff2"); }
+    @font-face { font-family:Inter; font-style:normal; font-weight:200; font-display:swap; src:url("/font-files/inter/Inter-ExtraLight.woff2?v=4.0") format("woff2"); }
+    @font-face { font-family:Inter; font-style:italic; font-weight:200; font-display:swap; src:url("/font-files/inter/Inter-ExtraLightItalic.woff2?v=4.0") format("woff2"); }
+    @font-face { font-family:Inter; font-style:normal; font-weight:300; font-display:swap; src:url("/font-files/inter/Inter-Light.woff2?v=4.0") format("woff2"); }
+    @font-face { font-family:Inter; font-style:italic; font-weight:300; font-display:swap; src:url("/font-files/inter/Inter-LightItalic.woff2?v=4.0") format("woff2"); }
+    @font-face { font-family:Inter; font-style:normal; font-weight:400; font-display:swap; src:url("/font-files/inter/Inter-Regular.woff2?v=4.0") format("woff2"); }
+    @font-face { font-family:Inter; font-style:italic; font-weight:400; font-display:swap; src:url("/font-files/inter/Inter-Italic.woff2?v=4.0") format("woff2"); }
+    @font-face { font-family:Inter; font-style:normal; font-weight:500; font-display:swap; src:url("/font-files/inter/Inter-Medium.woff2?v=4.0") format("woff2"); }
+    @font-face { font-family:Inter; font-style:italic; font-weight:500; font-display:swap; src:url("https://rsms.me/font-files/Inter-MediumItalic.woff2?v=4.0") format("woff2"); }
+    @font-face { font-family:Inter; font-style:normal; font-weight:600; font-display:swap; src:url("https://rsms.me/font-files/Inter-SemiBold.woff2?v=4.0") format("woff2"); }
+    @font-face { font-family:Inter; font-style:italic; font-weight:600; font-display:swap; src:url("https://rsms.me/font-files/Inter-SemiBoldItalic.woff2?v=4.0") format("woff2"); }
+    @font-face { font-family:Inter; font-style:normal; font-weight:700; font-display:swap; src:url("https://rsms.me/font-files/Inter-Bold.woff2?v=4.0") format("woff2"); }
+    @font-face { font-family:Inter; font-style:italic; font-weight:700; font-display:swap; src:url("https://rsms.me/font-files/Inter-BoldItalic.woff2?v=4.0") format("woff2"); }
+    @font-face { font-family:Inter; font-style:normal; font-weight:800; font-display:swap; src:url("https://rsms.me/font-files/Inter-ExtraBold.woff2?v=4.0") format("woff2"); }
+    @font-face { font-family:Inter; font-style:italic; font-weight:800; font-display:swap; src:url("https://rsms.me/font-files/Inter-ExtraBoldItalic.woff2?v=4.0") format("woff2"); }
+    @font-face { font-family:Inter; font-style:normal; font-weight:900; font-display:swap; src:url("https://rsms.me/font-files/Inter-Black.woff2?v=4.0") format("woff2"); }
+    @font-face { font-family:Inter; font-style:italic; font-weight:900; font-display:swap; src:url("https://rsms.me/font-files/Inter-BlackItalic.woff2?v=4.0") format("woff2"); }
+    @font-face { font-family:InterDisplay; font-style:normal; font-weight:100; font-display:swap; src:url("https://rsms.me/font-files/InterDisplay-Thin.woff2?v=4.0") format("woff2"); }
+    @font-face { font-family:InterDisplay; font-style:italic; font-weight:100; font-display:swap; src:url("https://rsms.me/font-files/InterDisplay-ThinItalic.woff2?v=4.0") format("woff2"); }
+    @font-face { font-family:InterDisplay; font-style:normal; font-weight:200; font-display:swap; src:url("https://rsms.me/font-files/InterDisplay-ExtraLight.woff2?v=4.0") format("woff2"); }
+    @font-face { font-family:InterDisplay; font-style:italic; font-weight:200; font-display:swap; src:url("https://rsms.me/font-files/InterDisplay-ExtraLightItalic.woff2?v=4.0") format("woff2"); }
+    @font-face { font-family:InterDisplay; font-style:normal; font-weight:300; font-display:swap; src:url("https://rsms.me/font-files/InterDisplay-Light.woff2?v=4.0") format("woff2"); }
+    @font-face { font-family:InterDisplay; font-style:italic; font-weight:300; font-display:swap; src:url("https://rsms.me/font-files/InterDisplay-LightItalic.woff2?v=4.0") format("woff2"); }
+    @font-face { font-family:InterDisplay; font-style:normal; font-weight:400; font-display:swap; src:url("https://rsms.me/font-files/InterDisplay-Regular.woff2?v=4.0") format("woff2"); }
+    @font-face { font-family:InterDisplay; font-style:italic; font-weight:400; font-display:swap; src:url("https://rsms.me/font-files/InterDisplay-Italic.woff2?v=4.0") format("woff2"); }
+    @font-face { font-family:InterDisplay; font-style:normal; font-weight:500; font-display:swap; src:url("https://rsms.me/font-files/InterDisplay-Medium.woff2?v=4.0") format("woff2"); }
+    @font-face { font-family:InterDisplay; font-style:italic; font-weight:500; font-display:swap; src:url("https://rsms.me/font-files/InterDisplay-MediumItalic.woff2?v=4.0") format("woff2"); }
+    @font-face { font-family:InterDisplay; font-style:normal; font-weight:600; font-display:swap; src:url("https://rsms.me/font-files/InterDisplay-SemiBold.woff2?v=4.0") format("woff2"); }
+    @font-face { font-family:InterDisplay; font-style:italic; font-weight:600; font-display:swap; src:url("https://rsms.me/font-files/InterDisplay-SemiBoldItalic.woff2?v=4.0") format("woff2"); }
+    @font-face { font-family:InterDisplay; font-style:normal; font-weight:700; font-display:swap; src:url("https://rsms.me/font-files/InterDisplay-Bold.woff2?v=4.0") format("woff2"); }
+    @font-face { font-family:InterDisplay; font-style:italic; font-weight:700; font-display:swap; src:url("https://rsms.me/font-files/InterDisplay-BoldItalic.woff2?v=4.0") format("woff2"); }
+    @font-face { font-family:InterDisplay; font-style:normal; font-weight:800; font-display:swap; src:url("https://rsms.me/font-files/InterDisplay-ExtraBold.woff2?v=4.0") format("woff2"); }
+    @font-face { font-family:InterDisplay; font-style:italic; font-weight:800; font-display:swap; src:url("https://rsms.me/font-files/InterDisplay-ExtraBoldItalic.woff2?v=4.0") format("woff2"); }
+    @font-face { font-family:InterDisplay; font-style:normal; font-weight:900; font-display:swap; src:url("/font-files/inter/InterDisplay-Black.woff2?v=4.0") format("woff2"); }
+    @font-face { font-family:InterDisplay; font-style:italic; font-weight:900; font-display:swap; src:url("/font-files/inter/InterDisplay-BlackItalic.woff2?v=4.0") format("woff2"); }
+    :root {
+    --tblr-font-sans-serif: 'Inter Var', -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+    }
+    body {font-feature-settings: "cv03", "cv04", "cv11";}
+
+    /* Agrega este bloque al final de tu sección de estilos CSS */
+    ::-webkit-scrollbar {
+    width: 03px; /* Ancho de la barra de desplazamiento */
+    }
+
+    ::-webkit-scrollbar-track {
+    background-color: transparent; /* Color de fondo de la barra de desplazamiento */
+    }
+
+    ::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color del "pomo" de la barra de desplazamiento */
+    border-radius: 6px; /* Bordes redondeados */
+    border: 3px solid transparent; /* Borde transparente */
+    background-clip: content-box;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Color del "pomo" al pasar el ratón por encima */
+    }
+
+    #imagen {display:inline-block; }#saludo {align-items: center;}      
+</style>
+
+</head>
+<body>
+        
+
+<main id="skip">
+    
+<div class="page-body" >
+    <div class="container-xl">
+    <div class="row row-cards">
+        <div class="col-lg-8">
+        <div class="card card-lg">
+            <div class="card-body">
+            <div class="markdown" >
+
+<h1>Miraculous Ladybug - Juego en Línea: ¡Ayuda a Miraculous a Rescatar a sus Amigos!</h1>
+
+        <ul class="post-metadata">
+            <li><time datetime="2024-01-29">29 January 2024</time></li>
+            <li><a href="/tags/game/" class="post-tag">game</a>, </li>
+            <li><a href="/tags/games/" class="post-tag">games</a>, </li>
+            <li><a href="/tags/game-design/" class="post-tag">game-design</a>, </li>
+            <li><a href="/tags/gamedesign/" class="post-tag">gamedesign</a>, </li>
+            <li><a href="/tags/gamedevelopment/" class="post-tag">gamedevelopment</a>, </li>
+            <li><a href="/tags/game-designer/" class="post-tag">game-designer</a>, </li>
+            <li><a href="/tags/miraculous/" class="post-tag">miraculous</a></li>
+        </ul>
+
+
+        <script type="plication/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "Question",
+    "name": "¿Cómo puedo mejorar la toma de decisiones de mi hijo?",
+    "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Juegos educativos como Miraculous Ladybug en línea pueden ser útiles. Ayudan a desarrollar habilidades de toma de decisiones de manera divertida."
+    }
+    }
+
+    {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://github.com/luisangelmaciel/yicel"
+    },
+    "headline": "Miraculous Ladybug - Juego en Línea",
+    "description": "Juego educativo en línea para mejorar la toma de decisiones de los niños. ¡Ayuda a Miraculous a rescatar a sus amigos!",
+    "image": "https://github.com/luisangelmaciel/yicel.webp",
+    "author": {
+    "@type": "Person",
+    "name": "Luis Angel Maciel [https://luisangelmaciel.vercel.app]"
+    },
+    "publisher": {
+    "@type": "Organization",
+    "name": "Juegos personalizados por Luis Angel Maciel",
+    "logo": {
+        "@type": "ImageObject",
+        "url": "https://github.com/luisangelmaciel/logo.svg"
+    }
+    },
+    "datePublished": "Fecha de publicación",
+    "dateModified": "Fecha de modificación"
+    }</script>
+    <script type="plication/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "ImageObject",
+    "contentUrl": "https://github.com/luisangelmaciel/yicel.webp",
+    "description": "Captura de pantalla de Miraculous Ladybug - Juego en Línea"
+    }</script>
+    <style>.sr-only {clip: rect(0, 0, 0, 0);border-width:0;height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;white-space: nowrap;width: 1px;}</style>
+    <section>
+    ## ¡Eh, amantes de Miraculous Ladybug! 🐞 Si te gusta la idea de sumergirte en la acción con tus héroes favoritos, ¡este juego arcade es tu próxima obsesión! 🎮
+    <p>Imagínate deslizándote por París con Ladybug y Cat Noir, enfrentándote a villanos y salvando el día. ¡Pues deja de soñar y empieza a jugar!</p>
+    <p>Este juego arcade te lleva a una aventura emocionante con los personajes más geniales de Miraculous. Desafía tus habilidades mientras esquivas obstáculos, recolectas power-ups y derrotas a los malos. ¡No hay tiempo para aburrirse!</p>
+    <p>Después de cada ronda, te sentirás como un auténtico superhéroe. La adrenalina, los gráficos increíbles y la música te sumergirán en el mundo mágico de Miraculous Ladybug. ¡No podrás soltar el control!</p>
+    <p>¿Listo para la aventura? Descarga ahora y únete a Ladybug y Cat Noir en la lucha contra el mal. ¡Salva París y demuestra que eres el mejor superfan! 🚀💪 ¡No te quedes atrás, héroe!</p>
+    <p>¡Prepárate para la diversión y descarga el juego ahora! 📲🕹️ #MiraculousArcade</p>
+    </section>
+    <section class="sr-only">
+    <h3 class="sr-only">¿Qué otros proyectos ha desarrollado Luis Ángel Maciel?</h3>
+    Puedes encontrar más juegos de Luis Angel Maciel en su página de <a href="https://luisangelmaciel.itch.io/">itch.io</a> o en su <a href="https://github.com/luisangelmaciel/">sitioweb</a>. Espero que te diviertas jugando a estos juegos. 😊
+    <h4 class="sr-only">¿Qué otros proyectos ha desarrollado Luis Ángel Maciel?</h4>
+    Para descargar los juegos de Yicel Game, puedes visitar su página de <a href="https://luisangelmaciel.itch.io/">itch.io</a>, donde encontrarás los enlaces de descarga para cada juego. También puedes jugar algunos de sus juegos en el navegador, sin necesidad de descargarlos. Otra opción es visitar su <a href="https://github.com/luisangelmaciel/">de Github</a>, donde podrás ver más información sobre sus proyectos y acceder a sus demos.
+    </section>
+
+    <p>¡Gracias! ¿Por qué te ha gustado?<br>
+    -Facil de leer y escuchar<br>
+    -Directo al grano<br>
+    -Grámatica y estilo de calidad<br>
+    -Informativo<br>
+    -Tema de tendencia<br>
+    -Estimulante y motivador</p><br>
+
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-lg-4">
+            <div class="card">
+                    <div class="card-body">
+                <div class="d-flex align-items-center mb-3">
+                    <div class="me-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-md scale" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 20l10 0" /><path d="M6 6l6 -1l6 1" /><path d="M12 3l0 17" /><path d="M9 12l-3 -6l-3 6a3 3 0 0 0 6 0" /><path d="M21 12l-3 -6l-3 6a3 3 0 0 0 6 0" /></svg>
+                    </div>
+                    <div>
+                    <small class="text-muted">tabler/tabler is licensed under the</small>
+                    <h3 class="lh-1">MIT License</h3>
+                    </div>
+                </div>
+                <div class="text-muted mb-3">
+                    A short and simple permissive license with conditions only requiring preservation of copyright and
+                    license notices. Licensed works, modifications, and larger works may be distributed under different terms
+                    and without source code.
+                </div>
+                <h4>Permissions</h4>
+                <ul class="list-unstyled space-y-1">
+                    <li><!-- Download SVG icon from http://tabler-icons.io/i/check -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon text-green" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
+                    Commercial use</li>
+                    <li><!-- Download SVG icon from http://tabler-icons.io/i/check -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon text-green" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
+                    Modification</li>
+                    <li><!-- Download SVG icon from http://tabler-icons.io/i/check -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon text-green" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
+                    Distribution</li>
+                    <li><!-- Download SVG icon from http://tabler-icons.io/i/check -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon text-green" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
+                    Private use</li>
+                </ul>
+                <h4>Limitations</h4>
+                <ul class="list-unstyled space-y-1">
+                    <li><!-- Download SVG icon from http://tabler-icons.io/i/x -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon text-red" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+                    Liability</li>
+                    <li><!-- Download SVG icon from http://tabler-icons.io/i/x -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon text-red" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+                    Warranty</li>
+                </ul>
+                <h4>Conditions</h4>
+                <ul class="list-unstyled space-y-1">
+                    <li><!-- Download SVG icon from http://tabler-icons.io/i/info-circle -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon text-blue" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M12 9h.01" /><path d="M11 12h1v4h1" /></svg>
+                    License and copyright notice</li>
+                </ul>
+                </div>
+                <div class="card-footer">
+                This is not legal advice.
+                <a href="#" target="_blank">Learn more about repository licenses.</a>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+
+    <footer class="footer footer-transparent d-print-none">
+    <div class="container-xl">
+        <div class="row text-center align-items-center flex-row-reverse">
+            <div class="col-lg-auto ms-lg-auto">
+                <ul class="list-inline list-inline-dots mb-0">
+                    <li class="list-inline-item"><a href="https://luisangelmaciel.github.io/yicel/" target="_blank" class="link-secondary"
+                            rel="noopener">Game</a></li>
+                    <li class="list-inline-item"><a href="https://yarticulospromocionales.vercel.app/blog/yicel/" class="link-secondary">yarticulospromocionales</a></li>          
+                    <li class="list-inline-item"><a href="https://luisangelmaciel.vercel.app" target="_blank" class="link-secondary" >Blog</a></li>
+                    <li class="list-inline-item">
+                        <a href="https://luisangelmaciel.vercel.app" target="_blank" class="link-secondary"
+                            rel="noopener">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon text-pink icon-filled icon-inline"
+                                width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                            </svg>
+                            Sponsor
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-auto mt-3 mt-lg-0">
+                <ul class="list-inline list-inline-dots mb-0">
+                    <li class="list-inline-item">
+                        Copyright &copy; 2024
+                        <a href="." class="link-secondary">@luisangelmaciel</a>.
+                        All rights reserved.
+                    </li>       
+                </ul>
+            </div>
+        </div>
+    </div>
+    </footer>
+
+</body>
+</html>
+<!-- This website is like a Crystal, isn't it? Performance optimized by WBR Power Crystal. Learn more: https://www.xbr.pw  -->
